@@ -34,11 +34,6 @@ RUN chown -R dev:dev /home/dev/html
 COPY proftpd.conf /etc/proftpd/
 
 
-# PORT
-
-EXPOSE 21
-
-
 # Execution proftpd
 
 CMD ["proftpd", "--nodaemon"]
